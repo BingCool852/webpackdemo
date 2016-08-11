@@ -11,10 +11,11 @@ module.exports = {
 	就会调用后面的loader对文件进行处理，这正是webpack强大的原因。*/
 	module: {
 		//加载器配置
-		loaders: [{
-			test: /\.css$/,
-			loader: "style!css"
-		}]
+		loaders: [
+			{ test: /\.css$/, loader: "style!css" },
+			{ test: /\.(png|jpg)$/, loader: "url-loader?limit=8192" } // 添加到这！并且会按照文件大小, 或者转化为 base64, 或者单独作为文件
+    		//在大小限制后可以加上&name=./[name].[ext]，会将我们的文件生成在设定的文件夹下。
+		]
 	},
 	plugins: [
 		new Webpack.BannerPlugin("这里是打包文件头部注释!") //注意这是一个数组

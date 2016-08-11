@@ -5,3 +5,15 @@ body {
 #app {
 	border: 1px solid #000;
 }
+
+#images1 {
+	width:800px;
+	height: 500px;
+	background-image: url(img/a.png);
+}
+
+#images2 {
+	width:800px;
+	height: 500px;
+	background-image: url(img/b.jpg);
+}
