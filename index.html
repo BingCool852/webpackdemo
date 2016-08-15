@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>index</title>
+	<meta charset="UTF-8">
+	<title>Webpack Vue</title>
+	<style>
+		#app {
+			margin: 20px auto;
+			width: 800px;
+			height: 600px;
+		}
+	</style>
 </head>
 <body>
-    <h1 id="app"></h1>
-    <img src="img/a.png" alt="">
-    <div id="images1"></div>
-    <div id="images2"></div>
-    <div>Hello Webpack</div>
-    <input type="text" v-model="message">
-    {{ message }}
-    <script src="bundle.js"></script>
+	<div id="app">
+		<router-view></router-view>
+	</div>
+	<script src="dist/main.js"></script>
 </body>
 </html>

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --port 8082"
   },
   "author": "",
   "license": "MIT",
@@ -30,6 +31,7 @@
   },
   "dependencies": {
     "vue": "^1.0.26",
+    "vue-router": "^0.7.13",
     "webpack": "^1.13.1"
   }
 }

@@ -51,7 +51,7 @@ module.exports = {
 	babel: {
 		presets: ['es2015'],
 		plugins: ['transform-runtime']
-	}
+	},
 
 	resolve: {
 		//require时省略的扩展名
